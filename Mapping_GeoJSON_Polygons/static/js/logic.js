@@ -75,7 +75,7 @@ let torontoHoods = "https://raw.githubusercontent.com/ASCHEET/Mapping_Earthquake
 // Create a style for the lines.
 let myStyle = {
   color: "#ffffa1",
-  weight: 2, 
+  weight: 1, 
   fill: "yellow"
 }
 

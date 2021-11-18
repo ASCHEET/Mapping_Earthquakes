@@ -15,6 +15,18 @@ Using JavaScript, Leaflet.js, and geoJSON data, add major earthquake data to the
 ## Deliverable Three: Add an Additional Map
 Mapbox Outdoors style was added as a third layer option to view the earthquake data.
 ![Fig 3 - Outdoor layer](https://github.com/ASCHEET/Mapping_Earthquakes/blob/main/Earthquake_Challenge/4.5_earthquakes_map_w_outdoors_overlay.png?raw=true)
+=======
+![Fig - 1 - Techtonic Plates]()
+
+## Deliverable 2: Add Major Earthquake Data
+Using JavaScript, Leaflet.js, and geoJSON data, add major earthquake data to the map using d3.json(). Also added color and set the radius of the circle markers based on the magnitude of earthquake, and added a popup marker for each earthquake that displays the magnitude and location of the earthquake using the GeoJSON layer.
+![Fig 2 - All Earthquakes]()
+
+## Deliverable 3: Add an Additional Map
+Mapbox Outdoors style was added as a third layer option to view the earthquake data.
+![Fig 3 - Outdoor layer]()
+
+
 
 
 
