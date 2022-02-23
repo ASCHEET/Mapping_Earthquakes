@@ -1,0 +1,665 @@
+html,
+body,
+#mapid {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.legend {
+  padding: 10px;
+  line-height: 18px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.legend i {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+#line_chart {
+    padding-left: 1em;
+}
+
+/*
+	Rocket Internet by TEMPLATE STOCK
+    templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* Typography CSS */
+body
+{
+    font-family: 'Lato', sans-serif;
+    color: #41484b;
+}
+
+/* Header */
+.header {
+    padding: 8em;
+    background-image: url("https://i.postimg.cc/rs44w6qd/Header3-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+        background-position-x: center;
+        background-position-y: center;
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+        list-style-position: outside;
+        list-style-image: none;
+        list-style-type: none;
+    padding: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Arial, Helvetica, sans-serif";
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(190, 102, 62);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.header h1 {
+    text-align: center;
+    padding-top: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: white !important;
+	font-size: 40px;
+	text-shadow: -1px 1px 0 rgb(190, 102, 62),
+				  1px 1px 0 rgb(190, 102, 62),
+				 1px -1px 0 rgb(190, 102, 62);
+}
+
+/* feature */
+.feature img
+{
+    width: 100%;
+}
+
+div.container .feature-box p
+{
+    text-align: left;
+
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.feature-box
+{
+    padding: 20px;
+}
+
+div.feature-box p2
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+.feature-box h1
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;   
+    margin-top: 2em;
+    color: rgb(190, 102, 62);
+}
+
+.feature-box p
+{
+    font-size: 25px;
+    text-align: justify;
+}
+
+.feature-box p2
+{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#underpics
+{
+    color: rgb(190, 102, 62);
+}
+
+/* Portfolio */
+.portfolio .heading
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.portfolio img
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+#portpics a
+{
+    color: rgb(190, 102, 62)
+}
+
+#michigan_spill_blurb
+{
+    padding-left: 1em;
+    font-size: 25px;
+}
+
+.portfolio #map-last-img
+{
+    height: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio #map-last-img a
+{
+    color: rgb(190, 102, 62)
+}
+
+/* Call to Action */
+.call-top-action
+{
+    background-color: rgb(198,102,62);
+    color: #000000;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+
+.call-top-action h1
+{
+    font-size: 35px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin: 0px;
+}
+
+.call-top-action p
+{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.call-top-action a
+{
+    color: #fff;
+}
+
+.call-top-action span
+{
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer ul
+{
+    padding: 0px;
+    list-style: none;
+    margin: 20px;
+}
+
+footer ul li
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+footer ul li a span
+{
+    width: 50px;
+    height: 50px;
+    background: rgb(198,102,62);
+    display: block;
+    font-size: 30px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+footer .copyright
+{
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+
+/* Extra Small devices  */
+@media (max-width: 480px) {
+	
+}
+
+/* Extra Small devices  */
+@media (max-width: 767px) {
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text .vertical-line {        
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .feature-box {
+        padding: 0px;
+    }
+
+    .feature-box h1 {
+        font-size: 25px;
+        margin-top: 2em;
+        color: rgb(190, 102, 62);
+    }
+
+    .feature-box p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .nopadding {
+        padding: 15px !important;
+        margin: 0 !important;
+    }
+
+    .portfolio img {        
+        margin-bottom: 15px;
+    }
+
+    .call-top-action h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px !important;
+        margin: 0px;
+    }
+
+    .call-top-action p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .call-top-action span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer ul li a span {
+        width: 40px;
+        height: 40px;
+        background: rgb(198,102,62);
+        display: block;
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    footer .copyright {
+        font-size: 16px;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .feature-box h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+	
+    .feature-box p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .call-top-action h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 13px !important;
+        margin: 0px;
+    }
+
+    .call-top-action p {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+
+    .call-top-action span {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 23px;
+    }
+
+    footer ul li a span {
+        width: 40px;
+        height: 40px;
+        background: rgb(198,102,62);
+        display: block;
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 50%;
+    }   
+
+    footer .copyright 
+    {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+
+    footer .copyright a
+    {
+        font-size: 18px;
+        color: rgb(198,102,62);
+    }
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .feature-box {
+        padding: 10px;
+    }
+
+    .feature-box h1 {
+        font-size: 30px;
+        color: rgb(190, 102, 62);    
+    }
+
+    .feature-box p {
+        font-size: 20px;
+    }
+
+    .call-top-action p
+    {
+        font-size: 19px;
+    }
+
+    .call-top-action h1 {
+        font-size: 30px;
+       margin-bottom: 15px !important;
+    }
+
+    .call-top-action span {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Typography CSS */
+body
+{
+    font-family: 'Lato', sans-serif;
+    color: #41484b;
+}
+
+
+
+/* Header */
+#homeFullScreen {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top center;
+}
+
+#homeFullScreen {
+    background-image: url('../images/header2.jpg');
+    overflow: hidden;
+}
+
+#homeFullScreen {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.header-text h1
+{
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-text .vertical-line
+{
+    height: 2px;
+    background-color: #fff;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.header-text p
+{
+    font-size: 26px;
+    color: #fff;
+}
+
+
+/* feature */
+.feature img
+{
+    width: 100%;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.feature-box
+{
+    padding: 20px;
+}
+
+.feature-box h1
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;   
+    margin-top: 2em;
+    color: rgb(190, 102, 62);
+}
+
+.feature-box p
+{
+    font-size: 25px;
+    text-align: justify;
+}
+
+/* Portfolio */
+.portfolio .heading
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0px;
+    color: rgb(190, 102, 62)
+}
+
+.portfolio img
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.portfolio .last-img
+{
+    height: 800px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+/* Call to Action */
+.call-top-action
+{
+    color: #fff;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+
+.call-top-action h1
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin: 0px;
+}
+
+.call-top-action p
+{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.call-top-action span
+{
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer ul
+{
+    padding: 0px;
+    list-style: none;
+    margin: 20px;
+}
+
+footer ul li
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+footer ul li a span
+{
+    width: 50px;
+    height: 50px;
+    /* background: #42484C; */
+    background-color: rgb(198,102,62);
+    display: block;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+footer .copyright
+{
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+}
