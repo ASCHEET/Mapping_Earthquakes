@@ -5,21 +5,21 @@ console.log("working");
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
-	accessToken: k1
+	accessToken: API_KEY
 });
 
 // Create the second tile layer that will be the background of the map
 let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
-	accessToken: k1
+	accessToken: API_KEY
 });
 
 // Create the third tile layer that will be the background of the map
 let outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
-	accessToken: k1
+	accessToken: API_KEY
 });
 
 // Create the map object with center, zoom level and default layer.
@@ -73,13 +73,13 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
   // This function determines the color of the marker based on the magnitude of the earthquake.
   function getColor(magnitude) {
-    if (magnitude > 5) {
+    if (magnitude > 8) {
       return "#ea2c2c";
     }
-    if (magnitude > 4) {
+    if (magnitude > 6.5) {
       return "#ea822c";
     }
-    if (magnitude > 3) {
+    if (magnitude > 4) {
       return "#ee9c00";
     }
     if (magnitude > 2) {
@@ -131,7 +131,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
     return time;
   }
-  console.log(timeConverter(162548795423));
+  console.log(timeConverter(1652385567000));
 
 
   // 3. Retrieve the major earthquake GeoJSON data > 4.5 mag for the week
@@ -203,7 +203,7 @@ let legend = L.control({
 legend.onAdd = function() {
   let div = L.DomUtil.create("div", "info legend");
 
-  const magnitudes = [0, 1, 2, 3, 4, 5];
+  const magnitudes = [0, 1, 2, 4, 6.5, 8];
   const colors = [
     "#98ee00",
     "#d4ee00",
